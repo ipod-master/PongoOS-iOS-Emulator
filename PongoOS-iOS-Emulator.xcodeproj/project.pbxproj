@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+	534F016B1 in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F016A1 /* SwiftUI.framework */; };
+	534F016D1 in Sources */ = {isa = PBXBuildFile; fileRef = 534F016C1 /* PongoOSEmulatorApp.swift */; };
+	534F016F1 in Sources */ = {isa = PBXBuildFile; fileRef = 534F016E1 /* ContentView.swift */; };
+	534F01711 in Sources */ = {isa = PBXBuildFile; fileRef = 534F01701 /* TerminalView.swift */; };
+	534F01731 in Sources */ = {isa = PBXBuildFile; fileRef = 534F01721 /* BootStatusView.swift */; };
+	534F01751 in Sources */ = {isa = PBXBuildFile; fileRef = 534F01741 /* BootArgs.swift */; };
+	534F01771 in Sources */ = {isa = PBXBuildFile; fileRef = 534F01761 /* DeviceTree.swift */; };
+	534F01791 in Sources */ = {isa = PBXBuildFile; fileRef = 534F01781 /* BootSequence.swift */; };
+	534F017B1 in Sources */ = {isa = PBXBuildFile; fileRef = 534F017A1 /* BootSimulator.swift */; };
+	534F017D1 in Sources */ = {isa = PBXBuildFile; fileRef = 534F017C1 /* TerminalLogger.swift */; };
+	534F017F1 in Sources */ = {isa = PBXBuildFile; fileRef = 534F017E1 /* DeviceTreeParser.swift */; };
+	534F01811 in Sources */ = {isa = PBXBuildFile; fileRef = 534F01801 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+	534F01591 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongoOS-iOS-Emulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+	534F016A1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+	534F016C1 /* PongoOSEmulatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongoOSEmulatorApp.swift; sourceTree = "<group>"; };
+	534F016E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+	534F01701 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+	534F01721 /* BootStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootStatusView.swift; sourceTree = "<group>"; };
+	534F01741 /* BootArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootArgs.swift; sourceTree = "<group>"; };
+	534F01761 /* DeviceTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTree.swift; sourceTree = "<group>"; };
+	534F01781 /* BootSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootSequence.swift; sourceTree = "<group>"; };
+	534F017A1 /* BootSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootSimulator.swift; sourceTree = "<group>"; };
+	534F017C1 /* TerminalLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalLogger.swift; sourceTree = "<group>"; };
+	534F017E1 /* DeviceTreeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTreeParser.swift; sourceTree = "<group>"; };
+	534F01801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+	534F01821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+	534F01561 = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			534F016B1 in Frameworks,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+	534F01511 = {
+		isa = PBXGroup;
+		children = (
+			534F01591,
+		);
+		name = Products;
+		sourceTree = "<group>";
+	};
+	534F01501 = {
+		isa = PBXGroup;
+		children = (
+			534F015A1,
+		);
+		sourceTree = SOURCE_ROOT;
+	};
+	534F015A1 = {
+		isa = PBXGroup;
+		path = "PongoOS-iOS-Emulator";
+		sourceTree = SOURCE_ROOT;
+		children = (
+			534F015B1,
+			534F015C1,
+			534F015D1,
+			534F015E1,
+			534F01821,
+		);
+	};
+	534F015B1 = {
+		isa = PBXGroup;
+		path = App;
+		sourceTree = "<group>";
+		children = (
+			534F016C1,
+		);
+	};
+	534F015C1 = {
+		isa = PBXGroup;
+		path = Views;
+		sourceTree = "<group>";
+		children = (
+			534F016E1,
+			534F01701,
+			534F01721,
+		);
+	};
+	534F015D1 = {
+		isa = PBXGroup;
+		path = Models;
+		sourceTree = "<group>";
+		children = (
+			534F01741,
+			534F01761,
+			534F01781,
+		);
+	};
+	534F015E1 = {
+		isa = PBXGroup;
+		path = Services;
+		sourceTree = "<group>";
+		children = (
+			534F017A1,
+			534F017C1,
+			534F017E1,
+		);
+	};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+	534F01581 = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 534F01831;
+		buildPhases = (
+			534F01551,
+			534F01561,
+		);
+		buildRules = (
+		);
+		dependencies = (
+		);
+		name = "PongoOS-iOS-Emulator";
+		productName = "PongoOS-iOS-Emulator";
+		productReference = 534F01591;
+		productType = "com.apple.product-type.application";
+	};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+	534F01491 = {
+		isa = PBXProject;
+		attributes = {
+			BuildIndependentTargetsInParallel = 1;
+			LastUpgradeCheck = 1340;
+			TargetAttributes = {
+				534F01581 = {
+					CreatedOnToolsVersion = 13.4.1;
+				};
+			};
+		};
+		buildConfigurationList = 534F014C1;
+		compatibilityVersion = "Xcode 9.3";
+		developmentRegion = en;
+		hasScannedForEncodings = 0;
+		knownRegions = (
+			en,
+		);
+		mainGroup = 534F01501;
+		productRefGroup = 534F01511;
+		projectDirPath = "";
+		projectRoot = "";
+		targets = (
+			534F01581,
+		);
+	};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+	534F01551 = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			534F016D1 in Sources,
+			534F016F1 in Sources,
+			534F01711 in Sources,
+			534F01731 in Sources,
+			534F01751 in Sources,
+			534F01771 in Sources,
+			534F01791 in Sources,
+			534F017B1 in Sources,
+			534F017D1 in Sources,
+			534F017F1 in Sources,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+	534F014D1 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+			CLANG_CXX_LANGUAGE_DIALECT = "c++17";
+			CLANG_CXX_LIBRARY = "libc++";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DEPRECATED_OBJC_METHODS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_SUSPICIOUS_MOVES = YES;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = YES;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_LEVEL = c99;
+			GCC_DYNAMIC_NO_PIC = NO;
+			GCC_NO_COMMON_BLOCKS = YES;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = (
+				"DEBUG=1",
+				"$(inherited)",
+			);
+			GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+			GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+			GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+			GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+			GCC_WARN_SHADOW = YES;
+			GCC_WARN_SIGN_COMPARE = YES;
+			GCC_WARN_UNDECLARED_SELECTOR = YES;
+			GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			IOSCODE_SIGN_IDENTITY = "iPhone Developer";
+			IOSCODE_SIGN_IDENTITY[sdk=iphoneos*] = "iPhone Developer";
+			IOSCODESIGNING_REQUIRED = NO;
+			IOSCODESIGNING_REQUIRED[sdk=iphoneos*] = YES;
+			IOSPLATFORM_NAME = iphonesimulator;
+			IOSPLATFORM_NAME[sdk=iphoneos*] = iphoneos;
+			IOSSUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			IOSSUPPORTED_PLATFORMS[sdk=iphoneos*] = iphoneos;
+			MAC_OS_X_VERSION_MAJOR = 12;
+			MAC_OS_X_VERSION_MINOR = 3;
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			MTL_FAST_MATH = YES;
+			ONLY_ACTIVE_ARCH = YES;
+			SDKROOT = iphoneos;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			SWIFT_VERSION = 5.0;
+		};
+		name = Debug;
+	};
+	534F014E1 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+			CLANG_CXX_LANGUAGE_DIALECT = "c++17";
+			CLANG_CXX_LIBRARY = "libc++";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DEPRECATED_OBJC_METHODS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_SUSPICIOUS_MOVES = YES;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_LEVEL = c99;
+			GCC_NO_COMMON_BLOCKS = YES;
+			GCC_OPTIMIZATION_LEVEL = s;
+			GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+			GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+			GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+			GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+			GCC_WARN_SHADOW = YES;
+			GCC_WARN_SIGN_COMPARE = YES;
+			GCC_WARN_UNDECLARED_SELECTOR = YES;
+			GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			IOSCODE_SIGN_IDENTITY = "iPhone Developer";
+			IOSCODE_SIGN_IDENTITY[sdk=iphoneos*] = "iPhone Developer";
+			IOSCODESIGNING_REQUIRED = NO;
+			IOSCODESIGNING_REQUIRED[sdk=iphoneos*] = YES;
+			IOSPLATFORM_NAME = iphonesimulator;
+			IOSPLATFORM_NAME[sdk=iphoneos*] = iphoneos;
+			IOSSUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			IOSSUPPORTED_PLATFORMS[sdk=iphoneos*] = iphoneos;
+			MAC_OS_X_VERSION_MAJOR = 12;
+			MAC_OS_X_VERSION_MINOR = 3;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			MTL_FAST_MATH = YES;
+			SDKROOT = iphoneos;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			SWIFT_OPTIMIZATION_LEVEL = "-O";
+			SWIFT_VERSION = 5.0;
+			VALIDATE_PRODUCT = YES;
+		};
+		name = Release;
+	};
+	534F01841 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ASSET_CATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSOCIATED_FILES = "";
+			CLANG_ENABLE_MODULES = YES;
+			CODE_SIGN_IDENTITY = "Apple Development";
+			CODE_SIGN_IDENTITY[sdk=iphoneos*] = "iPhone Developer";
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			INFOPLIST_FILE = "PongoOS-iOS-Emulator/Info.plist";
+			INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLe UIInterfaceOrientationLandscapeRight";
+			IOSCODE_SIGN_IDENTITY[sdk=iphoneos*] = "iPhone Developer";
+			IOSDEPLOYMENT_TARGET = 14.0;
+			IOSPRODUCT_BUNDLE_IDENTIFIER = "com.ipod-master.PongoOS-iOS-Emulator";
+			IOSSWIFT_VERSION = 5.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_NAME = "PongoOS-iOS-Emulator";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		};
+		name = Debug;
+	};
+	534F01851 = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ASSET_CATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSOCIATED_FILES = "";
+			CLANG_ENABLE_MODULES = YES;
+			CODE_SIGN_IDENTITY = "Apple Development";
+			CODE_SIGN_IDENTITY[sdk=iphoneos*] = "iPhone Developer";
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			INFOPLIST_FILE = "PongoOS-iOS-Emulator/Info.plist";
+			INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLe UIInterfaceOrientationLandscapeRight";
+			IOSCODE_SIGN_IDENTITY[sdk=iphoneos*] = "iPhone Developer";
+			IOSDEPLOYMENT_TARGET = 14.0;
+			IOSPRODUCT_BUNDLE_IDENTIFIER = "com.ipod-master.PongoOS-iOS-Emulator";
+			IOSSWIFT_VERSION = 5.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_NAME = "PongoOS-iOS-Emulator";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		};
+		name = Release;
+	};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+	534F014C1 = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			534F014D1,
+			534F014E1,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	534F01831 = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			534F01841,
+			534F01851,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+/* End XCConfigurationList section */
+	};
+	rootObject = 534F01491;
+}
